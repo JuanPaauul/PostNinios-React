@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Axios from 'axios';
 
 function PostForm(props) {
+  const url = ""
   const [data, setData] = useState({
     name: "",
     lastName: "",
@@ -15,7 +16,15 @@ function PostForm(props) {
     console.log(newData)
   }
   function submit(e){
-    
+    e.preventDefault();
+    Axios.post(url,{
+      name: data.name,
+      lastName: data.lastName,
+      birthdate: data.birthdate,
+      ci: data.ci
+    }).then(res =>{
+      console.log(res.data)
+    })
   }
   return (
     <div>
