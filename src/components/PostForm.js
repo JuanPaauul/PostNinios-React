@@ -14,13 +14,16 @@ function PostForm(props) {
     setData(newData)
     console.log(newData)
   }
+  function submit(e){
+    
+  }
   return (
     <div>
-      <form>
-        <input placeholder='name' type='text'></input>
-        <input placeholder='lastName' type='text'></input>
-        <input placeholder='birthdate' type='date'></input>
-        <input placeholder='ci' type='text'></input>
+      <form onSubmit={(e)=> submit(e)}>
+        <input onChange={(e)=>handle(e)} id="name" value={data.name} placeholder='name' type='text'></input>
+        <input onChange={(e)=>handle(e)} id="lastName" value={data.lastName} placeholder='lastName' type='text'></input>
+        <input onChange={(e)=>handle(e)} id="birthName" value={data.birthdate} placeholder='birthdate' type='date'></input>
+        <input onChange={(e)=>handle(e)} id="ci" value={data.ci} placeholder='ci' type='text'></input>
         <button>Submit</button>
       </form>
     </div>
