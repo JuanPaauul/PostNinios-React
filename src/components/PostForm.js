@@ -1,7 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Axios from 'axios';
 
 function PostForm(props) {
+  const [data, setData] = useState({
+    name: "",
+    lastName: "",
+    birthdate: "",
+    ci: ""
+  })
   return (
     <div>
       <form>
