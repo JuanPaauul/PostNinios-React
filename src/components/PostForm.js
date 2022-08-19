@@ -31,7 +31,7 @@ function PostForm(props) {
       <form onSubmit={(e)=> submit(e)}>
         <input onChange={(e)=>handle(e)} id="name" value={data.name} placeholder='name' type='text'></input>
         <input onChange={(e)=>handle(e)} id="lastName" value={data.lastName} placeholder='lastName' type='text'></input>
-        <input onChange={(e)=>handle(e)} id="birthName" value={data.birthdate} placeholder='birthdate' type='date'></input>
+        <input onChange={(e)=>handle(e)} id="birthdate" value={data.birthdate} placeholder='birthdate' type='date'></input>
         <input onChange={(e)=>handle(e)} id="ci" value={data.ci} placeholder='ci' type='text'></input>
         <button>Submit</button>
       </form>
