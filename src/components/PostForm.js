@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Axios from 'axios';
 
 function PostForm(props) {
-  const url = ""
+  const url = "https://ucb-tde-ninos-con-valor-api.herokuapp.com/api/kids"
   const [data, setData] = useState({
     name: "",
     lastName: "",
