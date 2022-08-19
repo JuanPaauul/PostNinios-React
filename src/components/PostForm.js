@@ -1,4 +1,4 @@
-yimport React from 'react';
+import React from 'react';
 import Axios from 'axios';
 
 function PostForm(props) {
